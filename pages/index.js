@@ -19,7 +19,19 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className='w-screen grid gap-2 justify-center items-center px-2 sm:px-8 py-20'>
+        <div className='w-screen grid gap-2 justify-center items-center px-2 sm:px-8 pb-20 pt-32'>
+
+          <div className='bg-white fixed top-2 left-2 grid gap-2 grid-cols-2 justify-center items-center py-2 px-4 border'>
+
+            <a href='https://github.com/scottmcdonald1' target="_blank">
+              <Image src={githubIcon} width={40} height={40} />
+            </a>
+
+            <a href='https://www.linkedin.com/in/scott-mcdonald-0303/' target="_blank">
+              <Image src={linkedinIcon} width={40} height={40} />
+            </a>
+
+          </div>
         
           <div className='bg-white grid justify-center items-center border border-ombreNaturelle31 rounded px-4 pt-8 pb-4 shadow-sharp'>
 
@@ -96,7 +108,7 @@ function About() {
       (
         <div className='w-full grid gap-3 px-4 border-l'>
           <div className='bg-white w-full grid grid-cols-2 items-center border border-ombreNaturelle31 rounded px-4 py-2 shadow-sharp'>
-            <p>insert a paragraph about me</p>
+            <AboutBlurb />
           </div>
 
         </div>
@@ -105,5 +117,13 @@ function About() {
       )
     }
   </>
+  )
+}
+
+function AboutBlurb() {
+  return (
+    <p className='font-monda'>
+      This is where a blurb about me will go.
+    </p>
   )
 }

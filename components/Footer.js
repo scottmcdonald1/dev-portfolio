@@ -14,7 +14,7 @@ export default function Footer() {
 
 function GitHubLink() {
   return (
-    <a href="https://github.com/scottmcdonald1"target="blank">
+    <a href="https://github.com/scottmcdonald1/dev-portfolio" target="blank">
       <div className="border border-vert59/50 p-2 mb-2 hover:rounded hover:border-vert59 cursor-pointer transition-all">
         <Image src="/logo.png" alt="Trash Can Doodle to GitHub Link" width={40} height={40} />
       </div>

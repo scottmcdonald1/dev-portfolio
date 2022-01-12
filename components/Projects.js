@@ -30,7 +30,7 @@ export default function Projects() {
         <div>
           <h2 className='font-bowlbyOneSC text-3xl'>Projects</h2>
         </div>
-        
+
         <div className='grid justify-end'>
           <button
             onClick={toggleDisplayProjects}
@@ -41,8 +41,7 @@ export default function Projects() {
         </div>
       </div>
 
-      {displayProjects ? 
-        (
+      {displayProjects ? (
           <div className='w-full grid gap-3 px-4 border-l'>
 
             <ProjectItem 
@@ -92,8 +91,7 @@ function ProjectItem({name, demoUrl, repoUrl, note}) {
           className="grid justify-center items-center rounded-full border hover:border-spotifyBlack hover:shadow-smallSpread text-ombreNaturelle31/70 hover:text-ombreNaturelle31 p-2 transition duration-150 ease-out"
         >
           <p className='font-monda'>Details</p>
-        </button>
-        
+        </button>  
 
       </div>
     </div>
