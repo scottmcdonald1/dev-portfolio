@@ -23,12 +23,22 @@ export default function Home() {
 
           <div className='bg-white fixed top-2 left-2 grid gap-4 grid-cols-2 justify-center items-center py-2 px-4 border border-ombreNaturelle31 rounded shadow-sharp'>
 
-            <a href='https://github.com/scottmcdonald1' target="_blank" className='grid items-center'>
-              <Image src={githubIcon} width={40} height={40} />
+            <a 
+              href='https://github.com/scottmcdonald1' 
+              target="_blank" 
+              rel='noreferrer'
+              className='grid items-center'
+            >
+              <Image src={githubIcon} width={40} height={40} alt='github icon' />
             </a>
 
-            <a href='https://www.linkedin.com/in/scott-mcdonald-0303/' target="_blank" className='grid items-center'>
-              <Image src={linkedinIcon} width={40} height={40} className='fill-gray-500' />
+            <a 
+              href='https://www.linkedin.com/in/scott-mcdonald-0303/' 
+              target="_blank" 
+              rel='noreferrer'
+              className='grid items-center'
+            >
+              <Image src={linkedinIcon} width={40} height={40} className='fill-gray-500' alt='linkedin icon' />
             </a>
 
           </div>

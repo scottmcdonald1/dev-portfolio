@@ -9,9 +9,9 @@ export default function Projects() {
   const [displayProjects, setDisplayProjects] = useState(false);
 
   const expandIcon = displayProjects ? (
-    <Image src={expandLess} width={40} height={40} />
+    <Image src={expandLess} width={40} height={40} alt='expand less icon' />
   ) : (
-    <Image src={expandMore} width={40} height={40} />
+    <Image src={expandMore} width={40} height={40} alt='expand more icon' />
   )
 
   const toggleDisplayProjects = () => {
@@ -93,7 +93,7 @@ function ProjectItem({name, demoUrl, repoUrl, note}) {
 
 function ProjectItemLink({label, url}) {
   return (
-    <a href={url} target="_blank">
+    <a href={url} target="_blank" rel="noreferrer">
       <div 
         className='grid justify-center items-center rounded-full border    hover:border-spotifyBlack hover:shadow-smallSpread text-ombreNaturelle31/70 hover:text-ombreNaturelle31 p-2 transition duration-150 ease-out'
       >
