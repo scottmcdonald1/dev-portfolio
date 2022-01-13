@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 
 import expandMore from '../public/expand_more.svg'
 import expandLess from '../public/expand_less.svg'
@@ -48,7 +47,7 @@ export default function Projects() {
               name="BookBase" 
               demoUrl="https://bookbase-app.herokuapp.com/" 
               repoUrl="https://github.com/scottmcdonald1/bookbase"
-              note="Live demo down for the time being" 
+              note="The live demo down at this time due to server, I would be happy to give a tour on my local machine!" 
             />
 
             <ProjectItem 
@@ -82,16 +81,10 @@ function ProjectItem({name, demoUrl, repoUrl, note}) {
         {note ? (<p className='font-monda text-xs text-orangeVif'>{note}</p>): (<></>)}
       </div>
 
-      <div className='grid gap-2 md:grid-cols-3'>
+      <div className='grid gap-2 md:grid-cols-2'>
 
         <ProjectItemLink label="Live Demo" url={demoUrl} />
         <ProjectItemLink label="Repository" url={repoUrl} />
-        
-        <button 
-          className="grid justify-center items-center rounded-full border hover:border-spotifyBlack hover:shadow-smallSpread text-ombreNaturelle31/70 hover:text-ombreNaturelle31 p-2 transition duration-150 ease-out"
-        >
-          <p className='font-monda'>Details</p>
-        </button>  
 
       </div>
     </div>
