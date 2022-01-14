@@ -1,14 +1,5 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
-
-import Projects from '../components/Projects'
-
-import expandMore from '../public/expand_more.svg'
-import expandLess from '../public/expand_less.svg'
-import githubIcon from '../public/github.svg'
-import linkedinIcon from '../public/linkedin.svg'
-import profilePic from '../public/profilepic.jpeg'
 
 export default function About() {
   return (

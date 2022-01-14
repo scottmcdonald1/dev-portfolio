@@ -1,17 +1,14 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-import expandMore from '../public/expand_more.svg'
-import expandLess from '../public/expand_less.svg'
-
 export default function Projects() {
 
   const [displayProjects, setDisplayProjects] = useState(false);
 
   const expandIcon = displayProjects ? (
-    <Image src={expandLess} width={40} height={40} alt='expand less icon' />
+    <p className='font-monda'>hide</p>
   ) : (
-    <Image src={expandMore} width={40} height={40} alt='expand more icon' />
+    <p className='font-monda'>show</p>
   )
 
   const toggleDisplayProjects = () => {

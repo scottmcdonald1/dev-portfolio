@@ -9,9 +9,9 @@ export default function About() {
   const [displayAbout, setDisplayAbout] = useState(false)
 
   const expandIcon = displayAbout ? (
-    <Image src={expandLess} width={40} height={40} alt='expand less icon' />
+    <p className='font-monda'>hide</p>
   ) : (
-    <Image src={expandMore} width={40} height={40} alt='expand more icon' />
+    <p className='font-monda'>show</p>
   )
 
   const toggleDisplayAbout = () => {
