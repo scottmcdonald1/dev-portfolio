@@ -1,8 +1,9 @@
 import React from "react";
 
 export default function SocialIcons() {
+  
   return (
-    <div className='bg-white grid grid-flow-col gap-2 py-2 px-4 border border-ombreNaturelle31 rounded shadow-sharp'>
+    <div className='bg-white/70 grid grid-flow-col gap-2 py-2 px-4 border border-ombreNaturelle31 rounded shadow-sharp'>
 
       <a 
         href='https://github.com/scottmcdonald1' 

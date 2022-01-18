@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 
@@ -10,30 +11,30 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Scott McDonald</title>
+        <title>Home</title>
       </Head>
 
-      <div className='w-screen p-2'>
+      <div className='w-screen'>
       
-        <div className='w-full grid grid-cols-3'>
+        <div className='w-full fixed top-2 grid grid-cols-3 p-2'>
 
           <div className='flex'>
             <SocialIcons />
           </div>
 
-          <div className='h-full flex justify-center items-center'>
-            <div className='bg-white h-full grid justify-center items-center border border-ombreNaturelle31 rounded  shadow-sharp'>
-              <h1 className='font-bowlbyOneSC text-2xl whitespace-nowrap'>
+          <div className='flex'>
+            <div className='bg-white/70 h-full grid justify-center items-center py-2 px-8 border border-ombreNaturelle31 rounded shadow-sharp'>
+              <h1 className=' font-bowlbyOneSC text-2xl whitespace-nowrap'>
                 Scott McDonald
               </h1>
             </div>
           </div>
 
-          <div className='h-full grid justify-center items-center'>
-            <div className='bg-white h-full grid justify-center items-center border border-ombreNaturelle31 rounded shadow-sharp'>
-              <h1 className='font-monda text-xl'>
-                about
-              </h1>
+          <div className='h-full grid justify-end items-center'>
+            <div className='bg-white/70 h-full grid justify-center items-center py-2 px-4 border border-ombreNaturelle31 rounded shadow-sharp'>
+              <Link href="/about">
+                <span className='font-monda hover:cursor-pointer'>about</span>
+              </Link>
             </div>
           </div>
 
@@ -42,7 +43,7 @@ export default function Home() {
 
       </div>
 
-      <div className='w-screen min-h-screen px-2 sm:px-8 py-20'>
+      <div className='w-screen min-h-screen px-2 sm:px-8 pt-32'>
         <div className='grid gap-4'>
 
         <About />

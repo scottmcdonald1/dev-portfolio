@@ -33,7 +33,9 @@ module.exports = {
         'sharp': '-4px 5px 0px rgba(90,85,80,.2);',
         'spread': '-4px 5px 10px rgba(90,85,80);',
         'smallSpread': '-4px 5px 10px rgba(90,85,80,.2);',
+        'smallSpreadWhite': '-4px 5px 10px rgba(255,255,255);',
         'insetSmallSpread': 'inset -4px 5px 10px rgba(90,85,80,.2);',
+        'insetWhite': 'inset -4px 5px 10px rgba(255,255,255);',
         'sharpHover': '0px 6px 0px rgba(64,60,58,.4);',
       }
     },
