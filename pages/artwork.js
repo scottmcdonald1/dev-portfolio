@@ -19,41 +19,46 @@ export default function Artwork() {
   )
 }
 
+function ArtItem({artwork}) {
+  const [displayTitle, setDisplayTitle] = useState(false)
+
+  const display = displayTitle ? (
+    "bg-white/70 absolute bottom-2 right-2 translate-y-0 transition-all border border-ombreNaturelle31"
+  ) : (
+    "absolute bottom-2 right-2 translate-y-full transition-all"
+  );
+
+  const showDisplay = () => {
+    setDisplayTitle(true);
+  }
+
+  const hideDisplay = () => {
+    setDisplayTitle(false)
+  }
+
+  const altAttr = `Art Piece titled ${artwork.title}`;
+
+  return (
+    <div 
+      onMouseOver={showDisplay} 
+      onMouseOut={hideDisplay}
+      className="w-full h-full relative grid gap-2 border border-ombreNaturelle31 rounded shadow-sharp p-2 overflow-hidden"
+    >
+      <div className="w-full h-full grid justify-center items-center">
+        <img src={artwork.src} alt={altAttr} className="max-h-72"/>
+      </div>
+      <div className={display}>
+        <p className="p-2"><i>{artwork.title}</i></p>
+      </div>
+    </div>
+  )
+
+}
+
 function ArtItems({artworks}) {
 
-
   const artItems = artworks.map((artwork, i) => {
-
-    const [displayTitle, setDisplayTitle] = useState(false)
-
-    const display = displayTitle ? (
-      "bg-white/70 absolute bottom-2 right-2 translate-y-0 transition-all border border-ombreNaturelle31"
-    ) : (
-      "absolute bottom-2 right-2 translate-y-full transition-all"
-    );
-
-    const showDisplay = () => {
-      setDisplayTitle(true);
-    }
-
-    const hideDisplay = () => {
-      setDisplayTitle(false)
-    }
-    return (
-      <div 
-        key={i} 
-        onMouseOver={showDisplay} 
-        onMouseOut={hideDisplay}
-        className="w-full h-full relative grid gap-2 border border-ombreNaturelle31 rounded shadow-sharp p-2 overflow-hidden"
-      >
-        <div className="w-full h-full grid justify-center items-center">
-          <img src={artwork.src} className="max-h-72"/>
-        </div>
-        <div className={display}>
-          <p className="p-2"><i>{artwork.title}</i></p>
-        </div>
-      </div>
-    )
+    return <ArtItem key={i} artwork={artwork} />
   })
 
   return <>{artItems}</>
