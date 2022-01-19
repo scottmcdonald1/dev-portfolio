@@ -69,9 +69,37 @@ export default function Projects() {
   )
 }
 
+export function ProjectList() {
+  return (
+    <div className='w-full grid gap-3 px-4'>
+
+      <ProjectItem 
+        name="BookBase" 
+        demoUrl="https://bookbase-app.herokuapp.com/" 
+        repoUrl="https://github.com/scottmcdonald1/bookbase"
+        note="The live demo down at this time due to server, I would be happy to give a tour on my local machine!" 
+      />
+
+      <ProjectItem 
+        name="Spotify API Assistant" 
+        demoUrl="https://spotifyapp-three.vercel.app/"
+        repoUrl="https://github.com/scottmcdonald1/spotifyapp"
+        note="Currently in development, but MVP available for viewing"
+      />
+
+      <ProjectItem 
+        name="Quiz App" 
+        demoUrl="https://quizapp-eight.vercel.app/"
+        repoUrl="https://github.com/scottmcdonald1/quizapp"
+      />
+
+    </div>
+  )
+}
+
 function ProjectItem({name, demoUrl, repoUrl, note}) {
   return (
-    <div className='bg-white w-full grid grid-cols-2 items-center border border-ombreNaturelle31 rounded px-4 py-2 shadow-sharp'>
+    <div className='bg-white w-full grid gap-2 grid-cols-2 items-center border border-ombreNaturelle31 rounded px-4 py-2 shadow-sharp'>
 
       <div className='grid'>
         <p className='font-monda text-lg'>{name}</p>
