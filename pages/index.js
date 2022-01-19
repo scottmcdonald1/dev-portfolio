@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Projects from '../components/Projects'
-import About from '../components/About'
-import SocialIcons from '../components/SocialIcons'
+import Projects from '../src/Projects'
+import About from '../src/About'
+import SocialIcons from '../src/SocialIcons'
 
 export default function Home() {
   return (
