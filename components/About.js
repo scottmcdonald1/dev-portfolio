@@ -70,8 +70,11 @@ const blurb = [
     👋 Hello! Welcome to my portfolio page. As you probably have figured out by now, my name is Scott McDonald, and I have been working incredibly hard towards becoming a web developer.
   `, 
   `
-    In mid-2020, I began teaching myself the skills and languages needed to enter the web development field, leaving my current workplace so I could devote all of my time to fast-tracking the development of my coding skills. In the summer of 2021, I completed LaunchCode's LC101 program, a Missouri-based non-profit dedicated to helping people from non-traditional backgrounds develop skills and find work within the tech community. Through this, I earned a certificate in Java and JavaScript web development and am incredibly proud of that accomplishment. Additionally, I have immersed myself in numerous self-guided tutorials through resources such as Harvard's CS50x course, FreeCodeCamp, and a few from Wes Bos, an Ontario-based web developer, educator, and podcaster.
+    In early 2020, on something of a whim, I began teaching myself the skills and languages needed to enter the web development field. Honestly, I started merely to have something to focus on as the restaurant I worked at went through a series of closures while it attempted to navigate through the early stages of the COVID-19 pandemic. 
   `, 
+  `
+    My introduction to web development started with Harvard's CS50x taught by David Malan, and I was drawn to it almost immediately. By mid-2020, I left my current workplace to devote all of my time to fast-tracking the development of my coding skills. In the summer of 2021, I completed LaunchCode's LC101 program, a Missouri-based non-profit dedicated to helping people from non-traditional backgrounds develop skills and find work within the tech community. Through this, I earned a certificate in Java and JavaScript web development and am incredibly proud of that accomplishment.
+  `,
   `
     I am eager to apply the skills that I have developed in a professional environment. I am proficient in JavaScript and TypeScript and am most familiar with building React apps in a Next.js framework (I also have experience working in Angular). Though I feel most comfortable on the front-end, I also have ample experience with the back-end working in Java with Spring Boot. 
   `, 
