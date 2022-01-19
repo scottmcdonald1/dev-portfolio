@@ -1,18 +1,23 @@
 import React from "react";
 import Image from "next/image";
 
+import { GithubIconLink, LinkedinIconLink } from "./SocialIcons";
+
 export default function Footer() {
     return (
       <footer>
-        <div className="bg-white flex flex-col flex-1 justify-center items-center py-8 border-t border-ombreNaturelle31/50">
-          <GitHubLink />
-          <p className="font-abel text-orangeVif">Scott McDonald 2022</p>
+        <div className="bg-white grid gap-2 justify-center items-center mx-2 py-8 border-t border-ombreNaturelle31/50 mt-20">
+          <div className="grid gap-2 grid-cols-2 justify-center items-center">
+            <GithubIconLink />
+            <LinkedinIconLink />
+          </div>
+          <p className="font-monda text-outremerMoyen text-center">© Scott McDonald 2022</p>
         </div>
       </footer>
     )
 }
 
-function GitHubLink() {
+function RepoLink() {
   return (
     <a href="https://github.com/scottmcdonald1/dev-portfolio" target="blank">
       <div className="border border-vert59/50 p-2 mb-2 hover:rounded hover:border-vert59 cursor-pointer transition-all">

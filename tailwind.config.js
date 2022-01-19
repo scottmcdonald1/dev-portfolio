@@ -1,7 +1,7 @@
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -24,7 +24,9 @@ module.exports = {
         outremerGris: "rgb(217,225,221)",
         vertOliveVif: "rgb(184,161,54)",
         roseClair: "rgb(214,175,166)",
-        bleuCeruleen31: "rgb(62,110,144)"
+        bleuCeruleen31: "rgb(62,110,144)",
+        bleuCeruleen59: "rgb(122,167,203)",
+        outremerMoyen: "rgb(143,171,201)",
       },
       container: {
         center: true,
@@ -37,6 +39,10 @@ module.exports = {
         'insetSmallSpread': 'inset -4px 5px 10px rgba(90,85,80,.2);',
         'insetWhite': 'inset -4px 5px 10px rgba(255,255,255);',
         'sharpHover': '0px 6px 0px rgba(64,60,58,.4);',
+        'largeSpread': '0px 0px 20px rgba(90,85,80)',
+      },
+      dropShadow: {
+        'smDark': '0 1px 2px rgba(0, 0, 0, 1)',
       }
     },
   },
