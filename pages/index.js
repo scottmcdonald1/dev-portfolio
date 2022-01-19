@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
-import { useState } from 'react'
 
 import Projects from '../components/Projects'
 import About from '../components/About'

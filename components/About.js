@@ -1,8 +1,4 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
-
-import expandMore from '../public/expand_more.svg'
-import expandLess from '../public/expand_less.svg'
 
 export default function About() {
 
