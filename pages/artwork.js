@@ -10,13 +10,28 @@ export default function Artwork() {
       </Head>
 
       <div className='w-screen grid gap-2 justify-center items-center px-2 sm:px-8 pt-32'>
-        <h1 className='font-bowlbyOneSC text-5xl'>Artwork</h1>
-        <div className='bg-white font-monda w-full grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 items-center py-4'>
+
+        <div className="grid p-2 mx-2 border-b border-orangeClair">
+          <h1 className='font-bowlbyOneSC text-5xl drop-shadow-lg'>Artwork</h1>
+        </div>
+
+        <div className='font-monda w-full grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 items-center py-4'>
           <ArtItems artworks={artworks} />
         </div>
+
       </div>
     </div>
   )
+}
+
+function ArtItems({artworks}) {
+
+  const artItems = artworks.map((artwork, i) => {
+    return <ArtItem key={i} artwork={artwork} />
+  })
+
+  return <>{artItems}</>
+  
 }
 
 function ArtItem({artwork}) {
@@ -42,10 +57,10 @@ function ArtItem({artwork}) {
     <div 
       onMouseOver={showDisplay} 
       onMouseOut={hideDisplay}
-      className="w-full h-full relative grid gap-2 border border-ombreNaturelle31 rounded shadow-sharp p-2 overflow-hidden"
+      className="bg-white w-full h-full relative grid gap-2 border border-ombreNaturelle31 rounded shadow-sharp p-3 overflow-hidden"
     >
       <div className="w-full h-full grid justify-center items-center">
-        <img src={artwork.src} alt={altAttr} className="max-h-72"/>
+        <img src={artwork.src} alt={altAttr} className="max-h-72 drop-shadow-imgShadow"/>
       </div>
       <div className={display}>
         <p className="p-2"><i>{artwork.title}</i></p>
@@ -53,16 +68,6 @@ function ArtItem({artwork}) {
     </div>
   )
 
-}
-
-function ArtItems({artworks}) {
-
-  const artItems = artworks.map((artwork, i) => {
-    return <ArtItem key={i} artwork={artwork} />
-  })
-
-  return <>{artItems}</>
-  
 }
 
 const artworks = [

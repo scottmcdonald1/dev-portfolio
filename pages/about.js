@@ -9,10 +9,15 @@ export default function About() {
       </Head>
 
       <div className='w-screen grid gap-2 justify-center items-center px-2 sm:px-8 pt-32'>
-        <h1 className='font-bowlbyOneSC text-5xl'>About</h1>
-        <div className='bg-white font-monda w-full grid gap-3 items-center border border-ombreNaturelle31 rounded px-6 py-4 shadow-sharp'>
+
+        <div className="grid p-2 mx-2 border-b border-orangeClair">
+          <h1 className='font-bowlbyOneSC text-5xl drop-shadow-lg'>About</h1>
+        </div>
+
+        <div className='font-monda w-full grid items-center py-4'>
           <AboutBlurb blurb={blurb} />
         </div>
+
       </div>
     </div>
   )
@@ -24,13 +29,12 @@ function AboutBlurb({blurb}) {
     return <p key={i}>{paragraph}</p>
   })
 
-  return <>{paragraphs}</>
+  return (
+    <div className='bg-white/80 grid gap-3 border border-ombreNaturelle31 rounded shadow-sharp px-6 py-4'>{paragraphs}</div>
+  )
 }
 
 const blurb = [
-  `
-    👋 Hello! Welcome to my portfolio page. As you probably have figured out by now, my name is Scott McDonald, and I have been working incredibly hard towards becoming a web developer.
-  `, 
   `
     In early 2020, on something of a whim, I began teaching myself the skills and languages needed to enter the web development field. Honestly, I started merely to have something to focus on as the restaurant I worked at went through a series of closures while it attempted to navigate through the early stages of the COVID-19 pandemic. 
   `, 

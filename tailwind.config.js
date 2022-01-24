@@ -18,7 +18,9 @@ module.exports = {
         white: "rgba(255,255,255)",
         black: "rgba(0,0,0)",
         vert59: "rgb(66,143,112)",
+        vertFonce: "rgb(62,111,66)",
         orangeVif: "rgb(196,94,58)",
+        orangeClair: "rgb(220,141,103)",
         ombreNaturelle31: "rgb(90,85,80)",
         vertAnglaisPale: "rgb(190,203,183)",
         outremerGris: "rgb(217,225,221)",
@@ -27,6 +29,7 @@ module.exports = {
         bleuCeruleen31: "rgb(62,110,144)",
         bleuCeruleen59: "rgb(122,167,203)",
         outremerMoyen: "rgb(143,171,201)",
+        leJauneVif: "rgb(242,187,29)",
       },
       container: {
         center: true,
@@ -43,6 +46,7 @@ module.exports = {
       },
       dropShadow: {
         'smDark': '0 1px 2px rgba(0, 0, 0, 1)',
+        'imgShadow': '0 15px 10px rgba(0, 0, 0, 0.3)'
       }
     },
   },
