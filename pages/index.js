@@ -10,17 +10,17 @@ export default function Home() {
       </Head>
 
 
-      <div className='w-screen grid gap-2 justify-center items-center px-2 sm:px-8 pt-32'>
+      <div className="w-screen grid gap-2 justify-center items-center px-2 sm:px-8 pt-20">
 
         <div className="p-2 mx-2 border-b border-orangeClair ">
-          <div className='flex'>
-            <WelcomeTitle />
+          <div className="grid grid-flow-col justify-start">
+            <h1 className='font-bowlbyOneSC text-3xl sm:text-4xl drop-shadow-lg'>Welcome</h1>
           </div>
         </div>
 
         <div className='font-monda w-full grid gap-3 items-center py-4'>
 
-          <div className='bg-white/70 w-full grid gap-3 border border-ombreNaturelle31 rounded shadow-sharp px-6 py-4'>
+          <div className='bg-white/70 w-full grid gap-3 border border-ombreNaturelle31 rounded shadow-crazy px-6 py-4'>
 
             <WelcomeMessage message={welcome} />
 

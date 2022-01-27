@@ -15,7 +15,7 @@ export default function Footer() {
               <LinkedinIconLink />
             </div>
           </div>
-          <p className="font-monda text-outremerMoyen text-center">© Scott McDonald 2022</p>
+          <p className="font-monda text-center">© Scott McDonald 2022</p>
         </div>
       </footer>
     )

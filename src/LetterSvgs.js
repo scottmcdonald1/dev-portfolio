@@ -73,14 +73,12 @@ function Letter({id, d}) {
 
   return (
     <svg xmlns="http://www.w3.org/2000/svg"
-      width="80" 
-      height="80"
+      width="40" 
+      height="40"
       viewBox="0 0 275 275"
       className={letterClass}
       onMouseOver={jumpUp}
       onMouseOut={jumpDown}
-      onTouchStart={jumpUp}
-      onTouchEnd={jumpDown}
     >
       <path id={id} d={d} />
     </svg>

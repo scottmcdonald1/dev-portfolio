@@ -10,13 +10,10 @@ export default function About() {
         <title>About</title>
       </Head>
 
-      <div className='w-screen grid gap-2 justify-center items-center px-2 sm:px-8 pt-32'>
+      <div className="w-screen grid gap-2 justify-center items-center px-2 sm:px-8 pt-20">
 
         <div className="p-2 mx-2 border-b border-orangeClair">
-          <div className='flex'>
-            <AboutTitle />
-          </div>
-          {/* <h1 className='font-bowlbyOneSC text-5xl drop-shadow-lg'>About</h1> */}
+          <h1 className='font-bowlbyOneSC text-3xl sm:text-4xl drop-shadow-lg'>About</h1>
         </div>
 
         <div className='font-monda w-full grid items-center py-4'>
