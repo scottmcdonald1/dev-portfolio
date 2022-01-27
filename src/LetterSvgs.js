@@ -63,9 +63,9 @@ function Letter({id, d}) {
   const [raisedLetter, setRaisedLetter] = useState(false);
 
   const letterClass = raisedLetter ? (
-    "fill-white hover:fill-orangeClair stroke-black stroke-3 drop-shadow-smDark transition-all -translate-y-2"
+    "fill-white hover:fill-orangeClair stroke-black stroke-3 drop-shadow-medDark transition-all -translate-y-2"
   ) : (
-    "fill-white hover:fill-orangeClair stroke-black stroke-3 drop-shadow-smDark hover:drop-shadow-imgShadow transition-all translate-y-0"
+    "fill-white hover:fill-orangeClair stroke-black stroke-3 drop-shadow-smDark transition-all translate-y-0"
   )
 
   function jumpUp() { setRaisedLetter(true); }
