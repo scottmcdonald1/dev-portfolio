@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Head from 'next/head'
 
+import { ArtworkTitle } from "../src/LetterSvgs";
+
 export default function Artwork() {
 
   return (
@@ -12,7 +14,9 @@ export default function Artwork() {
       <div className='w-screen grid gap-2 justify-center items-center px-2 sm:px-8 pt-32'>
 
         <div className="grid p-2 mx-2 border-b border-orangeClair">
-          <h1 className='font-bowlbyOneSC text-5xl drop-shadow-lg'>Artwork</h1>
+         <div className="flex">
+          <ArtworkTitle />
+         </div>
         </div>
 
         <div className='font-monda w-full grid gap-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 items-center py-4'>
@@ -57,6 +61,8 @@ function ArtItem({artwork}) {
     <div 
       onMouseOver={showDisplay} 
       onMouseOut={hideDisplay}
+      onTouchStart={showDisplay}
+      onTouchEnd={hideDisplay}
       className="bg-white w-full h-full relative grid gap-2 border border-ombreNaturelle31 rounded shadow-sharp p-3 overflow-hidden"
     >
       <div className="w-full h-full grid justify-center items-center">
