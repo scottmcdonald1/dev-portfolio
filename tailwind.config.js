@@ -46,7 +46,7 @@ module.exports = {
       },
       dropShadow: {
         'smDark': '0 1px 2px rgba(0, 0, 0, 1)',
-        'medDark': '0 4px 4px rgba(0, 0, 0, .6)',
+        'medDark': '0 4px 2px rgba(0, 0, 0, .6)',
         'imgShadow': '0 15px 10px rgba(0, 0, 0, 0.3)',
       },
       strokeWidth: {
