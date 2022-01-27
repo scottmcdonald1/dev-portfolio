@@ -8,7 +8,7 @@ export default function ProjectList() {
         name="BookBase" 
         demoUrl="https://bookbase-app.herokuapp.com/" 
         repoUrl="https://github.com/scottmcdonald1/bookbase"
-        note="The live demo down at this time due to server issues. I would be happy to give a tour on my local machine!" 
+        note="username: bookbase.demo@gmail.com | password: password" 
       />
 
       <ProjectItem 
