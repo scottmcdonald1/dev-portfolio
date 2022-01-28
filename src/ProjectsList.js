@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import bookbaseScreenshot from '../public/bookbase_screenshot.png'
+
 export default function ProjectList() {
 
   const projects = projectInfo.map((project, i) => {
@@ -10,6 +12,7 @@ export default function ProjectList() {
         summary={project.summary}
         techStack={project.techStack}
         note={project.note}
+        src={project.src}
         demo={project.demo}
         repo={project.repo}
       />
@@ -21,7 +24,7 @@ export default function ProjectList() {
   )
 }
 
-function Project({name, summary, techStack, note, demo, repo}) {
+function Project({name, summary, techStack, note, src, demo, repo}) {
 
   const stack = techStack.map((tech, i) => {
     return (
@@ -29,49 +32,64 @@ function Project({name, summary, techStack, note, demo, repo}) {
     )
   })
 
-  return (
-    <div className='bg-white w-full  px-4 py-12'>
+  const altAttr = `screenshot for ${name}`;
 
-      <div className='grid justify-end my-3'>
+  return (
+    <div className='bg-white w-full grid sm:grid-rows-4 px-4 py-12'>
+
+      {/* ROW 1 */}
+      <div className='grid row-span-1 justify-end items-end'> 
         <h2 className='font-monda text-2xl'>{name}</h2>
       </div>
 
-      <div className='grid gap-4'>
+      {/* ROW 2 */}
+      <div className='grid row-span-2 sm:grid-cols-2'>
 
-        <div className='grid gap-4 sm:grid-cols-2'>
+        <div className='grid justify-center items-center'>
+          <div className='bg-white rounded p-2'>
+            <img src={src} alt={altAttr} className='max-h-72 drop-shadow-imgShadow' />
+          </div>
+        </div>
 
-          <div>
-            <div className='bg-white border rounded p-2'>
-              <h3 className='font-monda text-lg'>Summary</h3>
-              <div className='p-2'>
-                <p className='font-mona text-sm text-justify break-words'>{summary}</p>
-              </div>
+        <div className='grid justify-center items-center'>
+          <div className='bg-whiteborder rounded p-2 text-right'>
+            <h3 className='font-monda text-lg'>Tech Stack</h3>
+            <div className='py-1.5 px-3'>
+              {stack}
             </div>
           </div>
-
-          <div>
-            <div className='bg-white grid border rounded p-2'>
-              <h3 className='font-monda text-lg'>Tech Stack</h3>
-              <div className='p-2'>
-                {stack}
-              </div>
-            </div>
-          </div>
-
         </div>
-
-      <div className='bg-white grid gap-4 rounded p-4'>
-        <div className='grid justify-end'>
-          <p className='font-monda text-xs text-orangeVif'>{note}</p>
-        </div>
-
-        <div className='grid gap-2 sm:grid-cols-2'>
-          <ProjectLink label="Live Demo" url={demo} />
-          <ProjectLink label="Repository" url={repo} />
-        </div>
-
+        
       </div>
 
+      {/* ROW 3 */}
+      <div className='grid gap-2 sm:grid-cols-2'>
+
+        <div className='grid justify-center items-center'>
+          <div className='bg-white rounded p-2'>
+            <h3 className='font-monda text-lg'>Summary</h3>
+            <div className='py-1.5 px-3'>
+              <p className='font-mona text-sm text-justify break-words'>{summary}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className='grid justify-center items-center'>
+
+          <div className='bg-white grid gap-4 rounded p-4'>
+            
+            <div className='grid justify-end'>
+              <p className='font-monda text-xs text-orangeVif'>{note}</p>
+            </div>
+
+            <div className='grid gap-2 sm:grid-cols-2'>
+              <ProjectLink label="Live Demo" url={demo} />
+              <ProjectLink label="Repository" url={repo} />
+            </div>
+
+          </div>
+
+        </div>
       </div>
 
     </div>
@@ -110,6 +128,8 @@ const projectInfo = [
 
     note: `Guest login (email | password): bookbase.demo@gmail.com | password`,
 
+    src: `/bookbase_screenshot.png`,
+
     repo: `https://github.com/scottmcdonald1/bookbase`,
 
     demo: `https://bookbase-app.herokuapp.com/`,
@@ -129,6 +149,8 @@ const projectInfo = [
 
     note: `Currently in development, but MVP available for viewing (you will need a spotify account)`,
 
+    src: `/spotifyapp_screenshot.png`,
+
     repo: `https://github.com/scottmcdonald1/spotifyapp`,
 
     demo: `https://spotifyapp-three.vercel.app/`,
@@ -147,6 +169,8 @@ const projectInfo = [
     ],
 
     note: `Enjoy this quiz app I made as part of a weekly challenge in the Devjam discord group.`,
+
+    src: `/quizapp_screenshot.png`,
 
     repo: `https://github.com/scottmcdonald1/quizapp`,
 
