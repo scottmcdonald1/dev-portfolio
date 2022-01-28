@@ -19,3 +19,5 @@ export default function Layout({children}) {
     </div>
   )
 }
+
+// to add background throw this in div tag: className="bg-pattern bg-fixed bg-center bg-cover"

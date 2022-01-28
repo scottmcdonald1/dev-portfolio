@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 
-import bookbaseScreenshot from '../public/bookbase_screenshot.png'
-
 export default function ProjectList() {
 
   const projects = projectInfo.map((project, i) => {
@@ -28,34 +26,38 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
 
   const stack = techStack.map((tech, i) => {
     return (
-      <p key={i} className='font-monda text-sm'>{tech}</p>
+      <li key={i} className='font-monda text-sm'>{tech}</li>
     )
   })
 
   const altAttr = `screenshot for ${name}`;
 
   return (
-    <div className='bg-white w-full grid sm:grid-rows-4 px-4 py-12'>
+    <div className='w-full border-b  grid gap-4 sm:grid-rows-5 pb-12'>
 
       {/* ROW 1 */}
       <div className='grid row-span-1 justify-end items-end'> 
-        <h2 className='font-monda text-2xl'>{name}</h2>
+        <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2'>
+          <h2 className=' font-monda text-2xl'>{name}</h2>
+        </div>
       </div>
 
       {/* ROW 2 */}
-      <div className='grid row-span-2 sm:grid-cols-2'>
+      <div className='grid gap-2 row-span-2 sm:grid-cols-2'>
 
-        <div className='grid justify-center items-center'>
-          <div className='bg-white rounded p-2'>
-            <img src={src} alt={altAttr} className='max-h-72 drop-shadow-imgShadow' />
+        <div className='grid justify-center items-start'>
+          <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2'>
+            <img src={src} alt={altAttr} className='max-h-72' />
           </div>
         </div>
 
-        <div className='grid justify-center items-center'>
-          <div className='bg-whiteborder rounded p-2 text-right'>
-            <h3 className='font-monda text-lg'>Tech Stack</h3>
+        <div className='grid sm:justify-left justify-center items-end '>
+          <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2 text-left'>
+            <h3 className='font-monda text-lg text-ombreNaturelle31/70'>Tech Stack</h3>
             <div className='py-1.5 px-3'>
-              {stack}
+              <ul className='list-disc list-inside'>
+                {stack}
+              </ul>
             </div>
           </div>
         </div>
@@ -65,21 +67,25 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
       {/* ROW 3 */}
       <div className='grid gap-2 sm:grid-cols-2'>
 
-        <div className='grid justify-center items-center'>
-          <div className='bg-white rounded p-2'>
-            <h3 className='font-monda text-lg'>Summary</h3>
+        <div className='grid col-span-1 justify-center items-center'>
+          <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2'>
+            <h3 className='font-monda text-lg text-ombreNaturelle31/70'>Summary</h3>
             <div className='py-1.5 px-3'>
               <p className='font-mona text-sm text-justify break-words'>{summary}</p>
             </div>
           </div>
         </div>
 
-        <div className='grid justify-center items-center'>
+      </div>
 
-          <div className='bg-white grid gap-4 rounded p-4'>
+      {/* ROW 4 */}
+      <div className='grid gap-2 sm:grid-cols-5'>
+        <div className='grid sm:col-span-3 sm:col-start-2 justify-center items-center'>
+
+          <div className='bg-white grid gap-4 border border-ombreNaturelle31 rounded shadow-sharp p-4'>
             
             <div className='grid justify-end'>
-              <p className='font-monda text-xs text-orangeVif'>{note}</p>
+              <p className='font-monda text-xs text-ombreNaturelle31/70'>{note}</p>
             </div>
 
             <div className='grid gap-2 sm:grid-cols-2'>
@@ -128,7 +134,7 @@ const projectInfo = [
 
     note: `Guest login (email | password): bookbase.demo@gmail.com | password`,
 
-    src: `/bookbase_screenshot.png`,
+    src: `/sitepreviews/bookbase_screenshot.png`,
 
     repo: `https://github.com/scottmcdonald1/bookbase`,
 
@@ -142,14 +148,14 @@ const projectInfo = [
 
     techStack: [
       `JavaScript (React)`, 
-      `Next.js framework`,
+      `Next.js Framework`,
       `Tailwind.CSS`,
       `Spotify API`
     ],
 
     note: `Currently in development, but MVP available for viewing (you will need a spotify account)`,
 
-    src: `/spotifyapp_screenshot.png`,
+    src: `/sitepreviews/spotifyapp_screenshot.png`,
 
     repo: `https://github.com/scottmcdonald1/spotifyapp`,
 
@@ -163,14 +169,14 @@ const projectInfo = [
 
     techStack: [
       `JavaScript (React)`,
-      `Next.js framework`,
+      `Next.js Framework`,
       `Tailwind.CSS`,
       `Open Trivia Database API`,
     ],
 
     note: `Enjoy this quiz app I made as part of a weekly challenge in the Devjam discord group.`,
 
-    src: `/quizapp_screenshot.png`,
+    src: `/sitepreviews/quizapp_screenshot.png`,
 
     repo: `https://github.com/scottmcdonald1/quizapp`,
 

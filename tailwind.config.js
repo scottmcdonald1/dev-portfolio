@@ -55,6 +55,9 @@ module.exports = {
         '4': '4px',
         '5': '5px',
         '8': '8px'
+      },
+      backgroundImage: {
+        'pattern': "url('/bg.svg')",
       }
     },
   },
