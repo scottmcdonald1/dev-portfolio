@@ -33,7 +33,7 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
   const altAttr = `screenshot for ${name}`;
 
   return (
-    <div className='w-full border-b  grid gap-4 sm:grid-rows-5 pb-12'>
+    <div className='w-full border-b grid gap-12 sm:gap-4 sm:grid-rows-5 pb-12'>
 
       {/* ROW 1 */}
       <div className='grid row-span-1 justify-end items-end'> 
@@ -43,7 +43,7 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
       </div>
 
       {/* ROW 2 */}
-      <div className='grid gap-2 row-span-2 sm:grid-cols-2'>
+      <div className='grid gap-12 sm:gap-4 row-span-2 sm:grid-cols-2'>
 
         <div className='grid justify-center items-start'>
           <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2'>
@@ -51,7 +51,7 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
           </div>
         </div>
 
-        <div className='grid sm:justify-left justify-center items-end '>
+        <div className='grid justify-left sm:justify-center items-end '>
           <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2 text-left'>
             <h3 className='font-monda text-lg text-ombreNaturelle31/70'>Tech Stack</h3>
             <div className='py-1.5 px-3'>
