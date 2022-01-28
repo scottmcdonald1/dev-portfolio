@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div className='w-full fixed grid z-50'>
 
-      <div className="w-full bg-white/70 backdrop-blur-sm grid grid-cols-1 sm:grid-cols-2 p-2">
+      <div className="w-full bg-white/70 backdrop-blur-sm grid grid-cols-1 sm:grid-cols-2 border-b p-2">
 
         <div className='h-full grid justify-center items-end px-8'>
           <Link href="/">

@@ -6,7 +6,7 @@ import { GithubIconLink, LinkedinIconLink } from "./SocialIcons";
 export default function Footer() {
     return (
       <footer>
-        <div className="bg-white grid gap-2 justify-center items-center mx-2 py-8 border-t border-orangeClair mt-20">
+        <div className="bg-white/70 grid gap-2 justify-center items-center py-8 border-t  mt-20">
           <div className="grid gap-2 grid-cols-2 justify-center items-center">
             <div className='grid items-center justify-center'>
               <GithubIconLink />
