@@ -18,7 +18,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className='font-monda w-full grid items-center sm:px-8 py-4'>
+        <div className='font-monda grid items-center py-4'>
           <AboutBlurb blurb={blurb} />
         </div>
 
@@ -34,7 +34,7 @@ function AboutBlurb({blurb}) {
   })
 
   return (
-    <div className='bg-white/80 grid gap-3 border border-ombreNaturelle31 rounded shadow-sharp px-6 py-4'>{paragraphs}</div>
+    <div className='bg-white/80 max-w-prose mx-auto text-justify grid gap-3 border border-ombreNaturelle31 rounded shadow-sharp px-6 py-4'>{paragraphs}</div>
   )
 }
 

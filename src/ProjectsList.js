@@ -71,7 +71,7 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
           <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2'>
             <h3 className='font-monda text-lg text-ombreNaturelle31/70'>Summary</h3>
             <div className='py-1.5 px-3'>
-              <p className='font-mona text-sm text-justify break-words'>{summary}</p>
+              <p className='font-monda max-w-prose text-sm text-justify'>{summary}</p>
             </div>
           </div>
         </div>
