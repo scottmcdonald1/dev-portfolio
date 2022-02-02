@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import Head from 'next/head'
 
-import { ArtworkTitle } from "../src/LetterSvgs";
-
 export default function Artwork() {
 
   return (
@@ -46,6 +44,7 @@ function ArtItem({artwork}) {
   ) : (
     "absolute bottom-2 right-2 translate-y-full transition-all"
   );
+
 
   const showDisplay = () => {
     setDisplayTitle(true);

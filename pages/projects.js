@@ -2,7 +2,6 @@ import React from "react";
 import Head from 'next/head'
 
 import ProjectList from '../src/ProjectsList'
-import { ProjectsTitle } from "../src/LetterSvgs";
 
 export default function Projects() {
   return (
