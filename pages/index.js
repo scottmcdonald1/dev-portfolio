@@ -39,7 +39,7 @@ export default function Home() {
                   <div className='bg-white grid gap-2 border border-ombreNaturelle31 rounded shadow-sharp px-4 py-4'>
                     <h2 className='text-xl'>My name is Scott McDonald <span className='text-sm'>(he/him)</span></h2>
                     <p className='max-w-prose text-justify text-ombreNaturelle31 px-3'>
-                       I'm a full stack developer and artist. I have created this page to showcase the skills that I have been <i>developing</i> over the past two years.
+                       I'm a full stack developer and artist. I have created this site to showcase the skills that I have been <i>developing</i> over the past two years.
                     </p>
                   </div>
                 </div>
@@ -54,7 +54,7 @@ export default function Home() {
                 <div>
                   <div className='bg-white grid gap-2 border border-ombreNaturelle31 rounded shadow-sharp px-6 py-4'>
                     <h2 className='text-lg'>
-                      So come right in, make yourself at home!
+                      Come take a look!
                     </h2>
 
                     <p className='max-w-prose text-justify text-ombreNaturelle31 px-3'>

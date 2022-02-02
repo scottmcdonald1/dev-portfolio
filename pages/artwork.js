@@ -45,6 +45,7 @@ function ArtItem({artwork}) {
     "absolute bottom-2 right-2 translate-y-full transition-all"
   );
 
+
   const showDisplay = () => {
     setDisplayTitle(true);
   }

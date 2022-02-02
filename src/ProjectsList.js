@@ -26,7 +26,7 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
 
   const stack = techStack.map((tech, i) => {
     return (
-      <li key={i} className='font-monda text-sm'>{tech}</li>
+      <li key={i} className='font-monda text-sm text-ombreNaturelle31'>{tech}</li>
     )
   })
 
@@ -38,7 +38,7 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
       {/* ROW 1 */}
       <div className='grid row-span-1 justify-end items-end'> 
         <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2'>
-          <h2 className=' font-monda text-2xl'>{name}</h2>
+          <h2 className='font-monda text-2xl'>{name}</h2>
         </div>
       </div>
 
@@ -51,9 +51,9 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
           </div>
         </div>
 
-        <div className='grid justify-left sm:justify-center items-end '>
+        <div className='grid justify-left sm:justify-center items-end'>
           <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2 text-left'>
-            <h3 className='font-monda text-lg text-ombreNaturelle31/70'>Tech Stack</h3>
+            <h3 className='font-monda text-lg'>Tech Stack</h3>
             <div className='py-1.5 px-3'>
               <ul className='list-disc list-inside'>
                 {stack}
@@ -69,9 +69,9 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
 
         <div className='grid col-span-1 justify-center items-center'>
           <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2'>
-            <h3 className='font-monda text-lg text-ombreNaturelle31/70'>Summary</h3>
+            <h3 className='font-monda text-lg'>Summary</h3>
             <div className='py-1.5 px-3'>
-              <p className='font-monda max-w-prose text-sm text-justify'>{summary}</p>
+              <p className='font-monda max-w-prose text-sm text-justify text-ombreNaturelle31'>{summary}</p>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
           <div className='bg-white grid gap-4 border border-ombreNaturelle31 rounded shadow-sharp p-4'>
             
             <div className='grid justify-end'>
-              <p className='font-monda text-xs text-ombreNaturelle31/70'>{note}</p>
+              <p className='font-monda text-xs text-orangeVif'>{note}</p>
             </div>
 
             <div className='grid gap-2 sm:grid-cols-2'>
