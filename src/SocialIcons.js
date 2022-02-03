@@ -12,10 +12,10 @@ export default function SocialIcons() {
   )
 }
 
-export function GithubIconLink() {
+export function GithubIconLink({href}) {
   return(
     <a 
-      href='https://github.com/scottmcdonald1' 
+      href={href} 
       target="_blank" 
       rel='noreferrer'
     >
@@ -40,10 +40,10 @@ function GithubIcon() {
   )
 }
 
-export function LinkedinIconLink() {
+export function LinkedinIconLink({href}) {
   return (
     <a 
-      href='https://www.linkedin.com/in/scott-mcdonald-0303/' 
+      href={href} 
       target="_blank" 
       rel='noreferrer'
     >

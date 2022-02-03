@@ -9,10 +9,10 @@ export default function Footer() {
         <div className="bg-white/70 grid gap-2 justify-center items-center py-8 border-t  mt-20">
           <div className="grid gap-2 grid-cols-2 justify-center items-center">
             <div className='grid items-center justify-center'>
-              <GithubIconLink />
+              <GithubIconLink href='https://github.com/scottmcdonald1' />
             </div>
             <div className='grid items-center justify-center'>
-              <LinkedinIconLink />
+              <LinkedinIconLink href='https://www.linkedin.com/in/scott-mcdonald-0303/' />
             </div>
           </div>
           <p className="font-monda text-center">© Scott McDonald 2022</p>

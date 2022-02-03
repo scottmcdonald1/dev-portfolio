@@ -62,13 +62,13 @@ function ArtItem({artwork}) {
       onMouseOut={hideDisplay}
       onTouchStart={showDisplay}
       onTouchEnd={hideDisplay}
-      className="bg-white w-full h-full relative grid gap-2 border border-ombreNaturelle31 rounded shadow-sharp p-3 overflow-hidden"
+      className="bg-white/75 w-full h-full relative grid gap-2 border border-ombreNaturelle31 rounded shadow-sharp p-3 overflow-hidden"
     >
       <div className="w-full h-full grid justify-center items-center">
         <img src={artwork.src} alt={altAttr} className="max-h-72 drop-shadow-imgShadow"/>
       </div>
       <div className={display}>
-        <p className="p-2"><i>{artwork.title}</i></p>
+        <p className="text-ombreNaturelle31 p-2"><i>{artwork.title}</i></p>
       </div>
     </div>
   )

@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+import { GithubIconLink } from './SocialIcons'
+
 export default function ProjectList() {
 
   const projects = projectInfo.map((project, i) => {
@@ -33,11 +35,11 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
   const altAttr = `screenshot for ${name}`;
 
   return (
-    <div className='w-full border-b grid gap-12 sm:gap-4 sm:grid-rows-5 pb-12'>
+    <div className='w-full border-b-2 grid gap-12 sm:gap-4 sm:grid-rows-5 pb-12'>
 
       {/* ROW 1 */}
       <div className='grid row-span-1 justify-end items-end'> 
-        <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2'>
+        <div className='bg-white/75 border border-ombreNaturelle31 rounded shadow-sharp p-2'>
           <h2 className='font-monda text-2xl'>{name}</h2>
         </div>
       </div>
@@ -46,13 +48,13 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
       <div className='grid gap-12 sm:gap-4 row-span-2 sm:grid-cols-2'>
 
         <div className='grid justify-center items-start'>
-          <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2'>
+          <div className='bg-white/75 border border-ombreNaturelle31 rounded shadow-sharp p-2'>
             <img src={src} alt={altAttr} className='max-h-72' />
           </div>
         </div>
 
         <div className='grid justify-left sm:justify-center items-end'>
-          <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2 text-left'>
+          <div className='bg-white/75 border border-ombreNaturelle31 rounded shadow-sharp p-2 text-left'>
             <h3 className='font-monda text-lg'>Tech Stack</h3>
             <div className='py-1.5 px-3'>
               <ul className='list-disc list-inside'>
@@ -68,7 +70,7 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
       <div className='grid gap-2 sm:grid-cols-2'>
 
         <div className='grid col-span-1 justify-center items-center'>
-          <div className='bg-white border border-ombreNaturelle31 rounded shadow-sharp p-2'>
+          <div className='bg-white/75 border border-ombreNaturelle31 rounded shadow-sharp p-2'>
             <h3 className='font-monda text-lg'>Summary</h3>
             <div className='py-1.5 px-3'>
               <p className='font-monda max-w-prose text-sm text-justify text-ombreNaturelle31'>{summary}</p>
@@ -82,7 +84,7 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
       <div className='grid gap-2 sm:grid-cols-5'>
         <div className='grid sm:col-span-3 sm:col-start-2 justify-center items-center'>
 
-          <div className='bg-white grid gap-4 border border-ombreNaturelle31 rounded shadow-sharp p-4'>
+          <div className='bg-white/75 grid gap-4 border border-ombreNaturelle31 rounded shadow-sharp p-4'>
             
             <div className='grid justify-end'>
               <p className='font-monda text-xs text-orangeVif'>{note}</p>
@@ -102,6 +104,9 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
   )
 }
 
+
+// PROJECT PAGE COMPONENTS
+
 function ProjectLink({label, url}) {
   return (
     <a href={url} target="_blank" rel="noreferrer">
@@ -114,6 +119,14 @@ function ProjectLink({label, url}) {
   )
 }
 
+
+// QUICK LINKS FOR "/"
+
+export function QuickProjectLinks() {
+  return (
+    <></>
+  )
+}
 
 const projectInfo = [
   {
