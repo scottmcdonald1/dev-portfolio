@@ -40,7 +40,7 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
       {/* ROW 1 */}
       <div className='grid row-span-1 justify-end items-end'> 
         <div className='bg-white/75 border border-ombreNaturelle31 rounded shadow-sharp p-2'>
-          <h2 className='font-monda text-2xl'>{name}</h2>
+          <h2 className='font-monda font-bold text-2xl'>{name}</h2>
         </div>
       </div>
 
