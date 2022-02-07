@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 export default function Layout({children}) {
 
   return (
-    <div className="bg-pattern bg-fixed bg-center bg-cover">
+    <div className="bg-pattern bg-fixed bg-center bg-contain sm:bg-cover">
 
       <Navbar />
   

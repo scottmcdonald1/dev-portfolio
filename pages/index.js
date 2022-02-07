@@ -62,11 +62,12 @@ export default function Home() {
           </div>
 
           {/** ROW 3 */}
-          <div className='grid gap-4 grid-cols-3'>
-
-            <Doodle src="poor_richard.png" alt="boy with baloon" />
-            <Doodle src="grapes.png" alt="fancy hat" />
-            <Doodle src="henry.png" alt="nice robot" />
+          <div className='grid gap-4 grid-cols-3 sm:grid-cols-5 '>
+            <div className='grid grid-cols-3 col-span-3 sm:col-start-2'>
+              <Doodle src="poor_richard.png" alt="boy with baloon" />
+              <Doodle src="grapes.png" alt="fancy hat" />
+              <Doodle src="henry.png" alt="nice robot" />
+            </div>
 
           </div>
 
@@ -82,10 +83,10 @@ function Doodle({src, alt}) {
   const altAttr = `a doodle of a ${alt}`
 
   return (
-    <div className='grid col-span-1 justify-items-center items-center'>
+    <div className='grid justify-items-center items-center'>
       <div className='w-3/4 md:w-1/2'>
-        <div className='bg-white/75 grid border border-ombreNaturelle31 rounded-full overflow-hidden shadow-sharp'>
-            <img src={src} alt={altAttr} className='max-h-full' />
+        <div className='bg-white/40 backdrop-blur-sm grid border rounded-full overflow-hidden'>
+            <img src={src} alt={altAttr} className='max-h-full drop-shadow-imgShadow' />
         </div>
       </div>
     </div>
