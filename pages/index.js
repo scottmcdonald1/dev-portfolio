@@ -85,7 +85,7 @@ function Doodle({src, alt}) {
   return (
     <div className='grid justify-items-center items-center'>
       <div className='w-3/4 md:w-1/2'>
-        <div className='bg-white/75 grid border border-ombreNaturelle31 rounded-full overflow-hidden'>
+        <div className='bg-white/40 backdrop-blur-sm grid border rounded-full overflow-hidden'>
             <img src={src} alt={altAttr} className='max-h-full drop-shadow-imgShadow' />
         </div>
       </div>

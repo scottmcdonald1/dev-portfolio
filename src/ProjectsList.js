@@ -125,7 +125,7 @@ function ProjectLink({label, url}) {
 export function QuickProjectLinks() {
   return (
     <>
-    
+
     </>
   )
 }
