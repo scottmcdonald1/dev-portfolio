@@ -121,8 +121,8 @@ const artworks = [
     src: '/artwork/geotude.png'
   },
   {
-    title: 'Ghostie',
-    src: '/artwork/ghostie.png'
+    title: 'Canned Moose',
+    src: '/artwork/canned_moose.png'
   },
   {
     title: 'Ghosties',
@@ -155,5 +155,69 @@ const artworks = [
   {
     title: 'Milk',
     src: '/artwork/milk.png'
+  },
+  {
+    title: 'Poor Richard',
+    src: '/artwork/poor_richard.png'
+  },
+  {
+    title: 'Ghosties from the Void',
+    src: '/artwork/ghosties_from_the_void.png'
+  },
+  {
+    title: `Holdin' Delicious`,
+    src: '/artwork/holdin_delicious.png'
+  },
+  {
+    title: 'Lightyears Davis',
+    src: '/artwork/lightyears_davis.png'
+  },
+  {
+    title: 'More Mayo Please',
+    src: '/artwork/more_mayo_please.png'
+  },
+  {
+    title: 'Ohhhh ababy!',
+    src: '/artwork/ohhhh_ababy.png'
+  },
+  {
+    title: 'Professor',
+    src: '/artwork/professor.png'
+  },
+  {
+    title: 'Skull',
+    src: '/artwork/skull.png'
+  },
+  {
+    title: 'Snail Young',
+    src: '/artwork/snail_young.png'
+  },
+  {
+    title: 'Squad Ghouls',
+    src: '/artwork/squad_ghouls.png'
+  },
+  {
+    title: 'Stay Cool Out There',
+    src: '/artwork/stay_cool_out_there.png'
+  },
+  {
+    title: 'Sun and Flower',
+    src: '/artwork/sun_and_flower.png'
+  },
+  {
+    title: 'Swab the Duck',
+    src: '/artwork/swab_the_duck.png'
+  },
+  {
+    title: 'Unanticipated Flatulence',
+    src: '/artwork/unanticipated_flatulence.png'
+  },
+  {
+    title: 'Weirdos',
+    src: '/artwork/weirdos.png'
+  },
+  {
+    title: 'Grapes',
+    src: '/artwork/grapes.png'
   },
 ]

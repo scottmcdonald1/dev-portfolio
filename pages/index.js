@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
+
+import me from '../public/me.jpeg'
 
 export default function Home() {
   return (
@@ -20,9 +23,7 @@ export default function Home() {
             <div className='grid col-span-1 md:col-span-3 justify-items-center items-center'>
               <div className='w-2/3 sm:w-full md:w-1/2'>
                 <div className='bg-white/75 grid border border-ombreNaturelle31 rounded shadow-sharp p-2.5'>
-                  <div className='border border-ombreNaturelle31 rounded overflow-hidden'>
-                    <img src='me.jpeg' alt='a picture of me' />
-                  </div>
+                    <Image src={me} alt='a picture of me' className='rounded' />
                 </div>
               </div>
             </div>
