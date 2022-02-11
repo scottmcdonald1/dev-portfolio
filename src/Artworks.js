@@ -27,7 +27,7 @@ function ArtItem({title, fileName}) {
   const [displayTitle, setDisplayTitle] = useState(false)
 
   const display = displayTitle ? (
-    "bg-white/70 absolute bottom-2 right-2 translate-y-0 transition-all border border-ombreNaturelle31"
+    "bg-white/70 absolute bottom-2 right-2 translate-y-0 transition-all border"
   ) : (
     "absolute bottom-2 right-2 translate-y-full transition-all"
   );

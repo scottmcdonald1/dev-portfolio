@@ -5,8 +5,6 @@ import bookbaseScreenshot from '../public/sitepreviews/bookbase_screenshot.png'
 import spotifyappScreenshot from '../public/sitepreviews/spotifyapp_screenshot.png'
 import quizappScreenshot from '../public/sitepreviews/quizapp_screenshot.png'
 
-import { GithubIconLink } from './SocialIcons'
-
 export default function ProjectList() {
 
   return (
@@ -67,8 +65,8 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
       {/* ROW 2 */}
       <div className='grid gap-12 sm:gap-4 row-span-2 sm:grid-cols-2'>
 
-        <div className='grid justify-center items-start'>
-          <div className='bg-white/75 border border-ombreNaturelle31 rounded shadow-sharp p-2'>
+        <div className='grid justify-center justify-items-center items-start'>
+          <div className='bg-white/75 lg:w-5/6 2xl:w-3/4 border border-ombreNaturelle31 rounded shadow-sharp p-2'>
             <Image src={src} alt={altAttr} className='rounded' />
           </div>
         </div>
@@ -104,7 +102,7 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
       <div className='grid gap-2 sm:grid-cols-5'>
         <div className='grid sm:col-span-3 sm:col-start-2 justify-center items-center'>
 
-          <div className='bg-white/75 grid gap-4 border border-ombreNaturelle31 rounded shadow-sharp p-4'>
+          <div className='bg-white/75 w-full grid gap-4 border border-ombreNaturelle31 rounded shadow-sharp p-4'>
             
             <div className='grid justify-end'>
               <p className='font-monda text-xs text-orangeVif'>{note}</p>
@@ -124,29 +122,15 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
   )
 }
 
-
-// PROJECT PAGE COMPONENTS
-
 function ProjectLink({label, url}) {
   return (
     <a href={url} target="_blank" rel="noreferrer">
       <div 
-        className='grid justify-center items-center rounded-full border hover:border-spotifyBlack hover:shadow-smallSpread text-ombreNaturelle31/70 hover:text-ombreNaturelle31 p-2 transition duration-150 ease-out'
+        className='grid justify-center items-center rounded-full border hover:border-spotifyBlack hover:shadow-md text-ombreNaturelle31/70 hover:text-ombreNaturelle31 p-2 transition duration-150 ease-out'
       >
         <p className='font-monda'>{label}</p>
       </div>
     </a>
-  )
-}
-
-
-// QUICK LINKS FOR "/"
-
-export function QuickProjectLinks() {
-  return (
-    <>
-
-    </>
   )
 }
 

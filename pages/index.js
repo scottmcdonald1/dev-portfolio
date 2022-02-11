@@ -2,10 +2,10 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import me from '../public/me.jpeg'
-import poorRichard from '../public/poor_richard.png'
-import grapes from '../public/grapes.png'
-import henry from '../public/henry.png'
+import me from '../public/index/me.jpeg'
+import poorRichard from '../public/index/poor_richard.png'
+import grapes from '../public/index/grapes.png'
+import henry from '../public/index/henry.png'
 
 
 export default function Home() {
