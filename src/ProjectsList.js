@@ -1,26 +1,44 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
 
-import { GithubIconLink } from './SocialIcons'
+import bookbaseScreenshot from '../public/sitepreviews/bookbase_screenshot.png'
+import spotifyappScreenshot from '../public/sitepreviews/spotifyapp_screenshot.png'
+import quizappScreenshot from '../public/sitepreviews/quizapp_screenshot.png'
 
 export default function ProjectList() {
 
-  const projects = projectInfo.map((project, i) => {
-    return (
-      <Project
-        key={i}
-        name={project.name}
-        summary={project.summary}
-        techStack={project.techStack}
-        note={project.note}
-        src={project.src}
-        demo={project.demo}
-        repo={project.repo}
-      />
-    )
-  })
-
   return (
-    <div className='w-full grid gap-6'>{projects}</div>
+    <div className='w-full grid gap-6'>
+      <Project 
+        name={bookbaseInfo.name}
+        summary={bookbaseInfo.summary}
+        techStack={bookbaseInfo.techStack}
+        note={bookbaseInfo.note}
+        src={bookbaseScreenshot}
+        demo={bookbaseInfo.demo}
+        repo={bookbaseInfo.repo}
+      />
+
+      <Project 
+        name={spotifyappInfo.name}
+        summary={spotifyappInfo.summary}
+        techStack={spotifyappInfo.techStack}
+        note={spotifyappInfo.note}
+        src={spotifyappScreenshot}
+        demo={spotifyappInfo.demo}
+        repo={spotifyappInfo.repo}
+      />
+
+      <Project 
+        name={quizzappInfo.name}
+        summary={quizzappInfo.summary}
+        techStack={quizzappInfo.techStack}
+        note={quizzappInfo.note}
+        src={quizappScreenshot}
+        demo={quizzappInfo.demo}
+        repo={quizzappInfo.repo}
+      />
+    </div>
   )
 }
 
@@ -47,9 +65,9 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
       {/* ROW 2 */}
       <div className='grid gap-12 sm:gap-4 row-span-2 sm:grid-cols-2'>
 
-        <div className='grid justify-center items-start'>
-          <div className='bg-white/75 border border-ombreNaturelle31 rounded shadow-sharp p-2'>
-            <img src={src} alt={altAttr} className='max-h-72' />
+        <div className='grid justify-center justify-items-center items-start'>
+          <div className='bg-white/75 lg:w-5/6 2xl:w-3/4 border border-ombreNaturelle31 rounded shadow-sharp p-2'>
+            <Image src={src} alt={altAttr} className='rounded' />
           </div>
         </div>
 
@@ -84,7 +102,7 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
       <div className='grid gap-2 sm:grid-cols-5'>
         <div className='grid sm:col-span-3 sm:col-start-2 justify-center items-center'>
 
-          <div className='bg-white/75 grid gap-4 border border-ombreNaturelle31 rounded shadow-sharp p-4'>
+          <div className='bg-white/75 w-full grid gap-4 border border-ombreNaturelle31 rounded shadow-sharp p-4'>
             
             <div className='grid justify-end'>
               <p className='font-monda text-xs text-orangeVif'>{note}</p>
@@ -104,14 +122,11 @@ function Project({name, summary, techStack, note, src, demo, repo}) {
   )
 }
 
-
-// PROJECT PAGE COMPONENTS
-
 function ProjectLink({label, url}) {
   return (
     <a href={url} target="_blank" rel="noreferrer">
       <div 
-        className='grid justify-center items-center rounded-full border hover:border-spotifyBlack hover:shadow-smallSpread text-ombreNaturelle31/70 hover:text-ombreNaturelle31 p-2 transition duration-150 ease-out'
+        className='grid justify-center items-center rounded-full border hover:border-spotifyBlack hover:shadow-md text-ombreNaturelle31/70 hover:text-ombreNaturelle31 p-2 transition duration-150 ease-out'
       >
         <p className='font-monda'>{label}</p>
       </div>
@@ -119,82 +134,64 @@ function ProjectLink({label, url}) {
   )
 }
 
+const bookbaseInfo = {
+  name: `Bookbase`,
 
-// QUICK LINKS FOR "/"
+  summary: `Bookbase is a personal library management application. Through the use of "shelves" it allows users to keep track of books they have read, ones they are currently reading and those that they want to read in the future. At its core, its a true bookclub companion.`,
 
-export function QuickProjectLinks() {
-  return (
-    <>
+  techStack: [
+    `Java`, 
+    `Spring Framework (Gradle)`,
+    `Thymeleaf`, 
+    `Bootstrap`,
+    `MySQL RDS on AWS`,
+    `Hosted on Heroku`,
+    `Google Books API`, 
+    `NYT API (for bestsellers)`,
+  ],
 
-    </>
-  )
+  note: `Guest login (email | password): bookbase.demo@gmail.com | password`,
+
+  repo: `https://github.com/scottmcdonald1/bookbase`,
+
+  demo: `https://bookbase-app.herokuapp.com/`,
+
 }
 
-const projectInfo = [
-  {
-    name: `Bookbase`,
+const spotifyappInfo = {
+  name: `Spotify API Assistant`,
 
-    summary: `Bookbase is a personal library management application. Through the use of "shelves" it allows users to keep track of books they have read, ones they are currently reading and those that they want to read in the future. At its core, its a true bookclub companion.`,
+  summary: `A utility for professionals in the music industry for accessing information about artists, albums, and songs through use of the Spotify API (mostly ISRC codes). In it's essence, it is an accessible app for navigating music data with an easy-to-use user-interface.`,
 
-    techStack: [
-      `Java`, 
-      `Spring Framework (Gradle)`,
-      `Thymeleaf`, 
-      `Bootstrap`,
-      `MySQL RDS on AWS`,
-      `Hosted on Heroku`,
-      `Google Books API`, 
-      `NYT API (for bestsellers)`,
-    ],
+  techStack: [
+    `JavaScript (React)`, 
+    `Next.js Framework`,
+    `Tailwind.CSS`,
+    `Spotify API`
+  ],
 
-    note: `Guest login (email | password): bookbase.demo@gmail.com | password`,
+  note: `Currently in development. Due to Spotify API restrictions, access to the app is limited to whitelisted users.`,
 
-    src: `/sitepreviews/bookbase_screenshot.png`,
+  repo: `https://github.com/scottmcdonald1/spotifyapp`,
 
-    repo: `https://github.com/scottmcdonald1/bookbase`,
+  demo: `https://spotifyapp-three.vercel.app/`,
+}
 
-    demo: `https://bookbase-app.herokuapp.com/`,
-  },
-  
-  {
-    name: `Spotify API Assistant`,
+const quizzappInfo = {
+  name: `Quiz App`,
 
-    summary: `A utility for professionals in the music industry for accessing information about artists, albums, and songs through use of the Spotify API (mostly ISRC codes). In it's essence, it is an accessible app for navigating music data with an easy-to-use user-interface.`,
+  summary: `A fun, little quiz app.`,
 
-    techStack: [
-      `JavaScript (React)`, 
-      `Next.js Framework`,
-      `Tailwind.CSS`,
-      `Spotify API`
-    ],
+  techStack: [
+    `JavaScript (React)`,
+    `Next.js Framework`,
+    `Tailwind.CSS`,
+    `Open Trivia Database API`,
+  ],
 
-    note: `Currently in development, but MVP available for viewing (you will need a spotify account)`,
+  note: `Enjoy this quiz app I made as part of a weekly challenge in the Devjam discord group.`,
 
-    src: `/sitepreviews/spotifyapp_screenshot.png`,
+  repo: `https://github.com/scottmcdonald1/quizapp`,
 
-    repo: `https://github.com/scottmcdonald1/spotifyapp`,
-
-    demo: `https://spotifyapp-three.vercel.app/`,
-  },
-
-  {
-    name: `Quiz App`,
-
-    summary: `A fun, little quiz app.`,
-
-    techStack: [
-      `JavaScript (React)`,
-      `Next.js Framework`,
-      `Tailwind.CSS`,
-      `Open Trivia Database API`,
-    ],
-
-    note: `Enjoy this quiz app I made as part of a weekly challenge in the Devjam discord group.`,
-
-    src: `/sitepreviews/quizapp_screenshot.png`,
-
-    repo: `https://github.com/scottmcdonald1/quizapp`,
-
-    demo: `https://quizapp-eight.vercel.app/`,
-  },
-]
+  demo: `https://quizapp-eight.vercel.app/`,
+}

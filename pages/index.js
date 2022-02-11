@@ -1,5 +1,12 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
+
+import me from '../public/index/me.jpeg'
+import poorRichard from '../public/index/poor_richard.png'
+import grapes from '../public/index/grapes.png'
+import henry from '../public/index/henry.png'
+
 
 export default function Home() {
   return (
@@ -20,9 +27,7 @@ export default function Home() {
             <div className='grid col-span-1 md:col-span-3 justify-items-center items-center'>
               <div className='w-2/3 sm:w-full md:w-1/2'>
                 <div className='bg-white/75 grid border border-ombreNaturelle31 rounded shadow-sharp p-2.5'>
-                  <div className='border border-ombreNaturelle31 rounded overflow-hidden'>
-                    <img src='me.jpeg' alt='a picture of me' />
-                  </div>
+                    <Image src={me} alt='a picture of me' className='rounded' />
                 </div>
               </div>
             </div>
@@ -64,9 +69,9 @@ export default function Home() {
           {/** ROW 3 */}
           <div className='grid gap-4 grid-cols-3 sm:grid-cols-5 '>
             <div className='grid grid-cols-3 col-span-3 sm:col-start-2'>
-              <Doodle src="poor_richard.png" alt="boy with baloon" />
-              <Doodle src="grapes.png" alt="fancy hat" />
-              <Doodle src="henry.png" alt="nice robot" />
+              <Doodle src={poorRichard} alt="boy with baloon" />
+              <Doodle src={grapes} alt="fancy hat" />
+              <Doodle src={henry} alt="nice robot" />
             </div>
 
           </div>
@@ -85,8 +90,8 @@ function Doodle({src, alt}) {
   return (
     <div className='grid justify-items-center items-center'>
       <div className='w-3/4 md:w-1/2'>
-        <div className='bg-white/40 backdrop-blur-sm grid border rounded-full overflow-hidden'>
-            <img src={src} alt={altAttr} className='max-h-full drop-shadow-imgShadow' />
+        <div className='bg-white/20 backdrop-blur-sm grid border rounded-full overflow-hidden'>
+          <Image src={src} alt={altAttr} className='max-h-full drop-shadow-imgShadow' />
         </div>
       </div>
     </div>

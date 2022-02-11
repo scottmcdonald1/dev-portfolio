@@ -6,7 +6,7 @@ The goal of this project was to build a very basic, bare-bones portfolio website
 
 ## Live Demo 
 
-This project is in the early stages of development and does not have a live demo yet.
+This project can be viewed [here](https://www.scottmcdonald.page/)
 
  ## Tech Stack 🥞
 
@@ -16,4 +16,3 @@ This project is in the early stages of development and does not have a live demo
 
  - [Next.js](https://nextjs.org/)
  - [Tailwind CSS](https://tailwindcss.com/)
- - [Spotify API](https://developer.spotify.com/)
