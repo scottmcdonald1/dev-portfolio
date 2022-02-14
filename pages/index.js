@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import me from '../public/index/me.jpeg'
+import me from '../public/index/me2.png'
 import poorRichard from '../public/index/poor_richard.png'
 import grapes from '../public/index/grapes.png'
 import henry from '../public/index/henry.png'
